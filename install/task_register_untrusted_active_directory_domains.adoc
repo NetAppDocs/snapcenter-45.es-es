@@ -1,0 +1,65 @@
+---
+permalink: install/task_register_untrusted_active_directory_domains.html 
+sidebar: sidebar 
+keywords:  
+summary: Debe registrar Active Directory en el servidor de SnapCenter para administrar hosts, usuarios y grupos de varios dominios de Active Directory que no son de confianza. 
+---
+= Registrar dominios de Active Directory que no son de confianza
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Debe registrar Active Directory en el servidor de SnapCenter para administrar hosts, usuarios y grupos de varios dominios de Active Directory que no son de confianza.
+
+*Lo que necesitará*
+
+* Se debe acceder al nombre de dominio completo (FQDN) desde SnapCenter Server.
+* Si el FQDN no se puede resolver, las direcciones IP de las controladoras de dominio proporcionadas deben poder resolverse de SnapCenter Server.
+* Debe haber habilitado la comunicación bidireccional entre los hosts del plugin y SnapCenter Server.
+* La resolución de DNS se debe configurar desde el servidor de SnapCenter a los hosts del plugin y viceversa.
+
+
+*Acerca de esta tarea*
+
+Puede registrar un dominio no confiable con el FQDN. Si el FQDN no se puede resolver desde el servidor SnapCenter, puede registrarse con una dirección IP.
+
+Puede utilizar la interfaz de usuario de SnapCenter o los cmdlets de PowerShell para registrar un dominio que no es de confianza.
+
+* Pasos*
+
+. En el panel de navegación de la izquierda, haga clic en *Configuración*.
+. En la página Configuración, haga clic en *Configuración global*.
+. En la página Global Settings (Configuración global), haga clic en *Configuración de dominio*.
+. Haga clic en image:../media/add_policy_from_resourcegroup.gif[""] para registrar un nuevo dominio.
+. En la página Registrar nuevo dominio, especifique la información necesaria para registrar el dominio que no es de confianza:
++
+|===
+| Para este campo... | Realice lo siguiente... 
+
+
+ a| 
+Nombre de dominio
+ a| 
+Especifique el nombre NetBIOS para el dominio.
+
+
+
+ a| 
+Dominio FQDN
+ a| 
+Especifique el FQDN y haga clic en *resolver*.
+
+
+
+ a| 
+Direcciones IP del controlador de dominio
+ a| 
+Si el dominio FQDN no se puede resolver desde el servidor SnapCenter, especifique una o más direcciones IP de las controladoras de dominio.
+
+Para obtener más información, consulte https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_does_not_allow_to_add_Domain_Controller_IP_for_untrusted_domain_from_GUI["Agregue la IP del controlador de dominio para dominios que no sean de confianza desde la interfaz gráfica de usuario"^].
+
+|===
+. Haga clic en *Aceptar*.
+

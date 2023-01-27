@@ -1,0 +1,26 @@
+---
+permalink: protect-scc/concept_snapcenter_custom_plug_ins_overview.html 
+sidebar: sidebar 
+keywords: SnapCenter Custom Plug-ins 
+summary: Es posible crear plugins personalizados para las aplicaciones que se usan y emplear SnapCenter para el backup, la restauración o la clonado de tales aplicaciones. Al igual que otros complementos de SnapCenter, los plugins personalizados funcionan como componentes del host en el software Snap Center de NetApp y permiten la protección de datos para aplicaciones y la gestión de recursos. 
+---
+= Información general sobre los plugins personalizados de SnapCenter
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible crear plugins personalizados para las aplicaciones que se usan y emplear SnapCenter para el backup, la restauración o la clonado de tales aplicaciones. Al igual que otros plugins de SnapCenter, los plugins personalizados funcionan como componentes del host en el software SnapCenter de NetApp y permiten la protección de datos para aplicaciones y la gestión de recursos.
+
+Cuando se instalan plugins personalizados, es posible usar SnapCenter con la tecnología NetApp SnapMirror para crear mirrors de conjuntos de backups en otro volumen, y la tecnología NetApp SnapVault para la replicación de backup de disco a disco. Los plugins personalizados se pueden utilizar tanto en entornos de Windows como de Linux.
+
+
+NOTE: La interfaz de línea de comandos no admite los comandos de los plugins personalizados de SnapCenter SnapCenter.
+
+NetApp incluye plugins personalizados de MySQL y DB2 con SnapCenter Software 2.0 y versiones posteriores, y un plugin personalizado para MongoDB a partir de la versión 3.0. Estos plugins pueden descargarse del https://automationstore.netapp.com/home.shtml["Almacén de automatización del almacenamiento de NetApp"^].
+
+
+NOTE: Los plugins personalizados de MySQL, DB2 y MongoDB reciben soporte exclusivamente a través de las comunidades de NetApp.
+
+Para crear sus propios plugins personalizados, consulte link:concept_develop_a_plug_in_for_your_application.html["Desarrolle un complemento para la aplicación"^].
